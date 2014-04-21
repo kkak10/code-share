@@ -8,7 +8,7 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
-
+var db = require('mongojs').connect('node',['test']);
 var app = express();
 
 // all environments
